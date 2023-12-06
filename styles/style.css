@@ -83,9 +83,7 @@ body {
 }
 
 main {
-  /* background-color: var(--main-background-color); */
   color: var(--text-content-color);
-  min-height: 150px;
   font-family: 'DM Mono', monospace;
   font-size: 1.125rem;
   padding: 1rem 0 0 0;
@@ -98,7 +96,6 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  /* background-color: var(--main-background-color); */
   color: #fff;
   font-family: 'Oswald', sans-serif;
   font-weight: bold;
@@ -121,18 +118,15 @@ nav {
   min-width: 300px;
 }
 
-
 nav ul {
   padding: 0;
 }
 
-.mobile-img-wrapper {
-  /* display: flex; */
+.hero-img-wrapper {
   border-radius: 360px;
   overflow: hidden;
   width: 55%;
   margin: 0 auto 0.7rem auto;
-  /* padding: 1rem 0 1rem 0; */
 }
 
 .about-img-of-me {
@@ -165,9 +159,121 @@ nav ul {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
+  position: sticky;
+  top: 100%;
   width:100%;
   color: white;
   text-align: center;
+  padding: 0 0 0.25rem 0;
+}
+
+
+/* Skills section testing */
+.main-heading {
+    font-size: 2rem;
+}
+
+.sub-heading {
+    font-size: 1.5rem;
+}
+
+.skills-icons-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 1rem;  /* To provide a gap between certificates list on mobile */
+    width: 100%;
+  }
+
+  .skills-certs-div {
+    width: 100%;
+  }
+
+  figure {
+    width: 100%;
+    max-width: 144px;
+    transition: all 300ms;
+  }
+
+  figcaption {
+    margin: 0;
+    font-size: 1.5rem;
+    transform: scale(0);
+    text-align: center;
+    transition: all 300ms;
+  }
+
+  figure:hover figcaption {
+    /*filter: brightness(80%);*/
+    opacity: 1;
+    transform: scale(0.9);
+  }
+
+  figure:hover {
+    filter: brightness(90%);
+    opacity: 0.9;
+    transform: scale(0.9);
+  }
+
+  /* For Certificates List Items */
+  .skills-cert-list {
+    padding-left: 0rem;
+  }
+
+
+@media (min-width: 850px) {
+
+    .flex {
+        display: flex;
+    }
+
+    .hero-inner-wrapper {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    main {
+        margin-top: 100px;
+    }
+
+    .desktop-left {
+        width: 60%;
+    }
+
+    .hero-img-wrapper {
+        display: block;
+        width: 25%;
+        height: 25%;
+    }
+
+    /* SKILLS SECTION STILL EXPERIMENTING */
+    .skills {
+        margin-top: 25px;
+    }
+
+    .main-heading {
+        margin-bottom: 25px;;
+    }
+
+    .skills-desktop-layout {
+        justify-content: space-between;
+    }
+
+    .skills-tech-div {
+        width: 40%;
+    }
+
+    .skills-icons-wrapper {
+        padding: 0 0 0 0;
+    }
+
+    .skills-certs-div {
+        width: 50%;
+    }
+
+    footer {
+        text-align: right;
+        padding-right: 1rem;
+      }
 }
