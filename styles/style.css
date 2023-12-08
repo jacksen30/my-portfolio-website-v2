@@ -101,6 +101,7 @@ header {
   font-weight: bold;
   min-height: 60px;
   color: #FFF;
+  overflow: none;
 }
 
 nav {
@@ -112,15 +113,38 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   list-style: none;
-  background-color: #b8801e;
+  /* background-color: #b8801e; */
+  background-color: #BFC0C0;
   border-radius: 50px;
-  padding: 0.5rem 1rem;
+  /* padding: 0.5rem 1rem; */
   min-width: 300px;
 }
 
 nav ul {
   padding: 0;
 }
+
+.nav__item {
+    flex-grow: 1; /* Distribute space evenly */
+    text-align: center; /* Center text */
+}
+
+.nav__link {
+    display: block;
+    color: #1A1A1D;
+    flex: 1;
+    padding: 0.5rem 1rem;
+}
+
+.nav__link:hover {
+    background-color: #00BFFF;
+}
+/* Find a better way to style active page tab on header nav */
+.active-page {
+    /* background-color: #FFF; */
+}
+
+
 
 .hero-img-wrapper {
   border-radius: 360px;
