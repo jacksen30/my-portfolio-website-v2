@@ -145,9 +145,6 @@ nav ul {
     border-radius: 0 20px 20px 0;
 }
 
-.nav__link:hover {
-    background-color: #00BFFF;
-}
 /* Find a better way to style active page tab on header nav */
 .active-page {
     background-color: #00BFFF;
@@ -320,6 +317,10 @@ form {
 
     .flex {
         display: flex;
+    }
+
+    .nav__link:hover {
+        background-color: #00BFFF;
     }
 
     .hero-inner-wrapper {
