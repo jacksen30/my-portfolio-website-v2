@@ -101,7 +101,7 @@ header {
   font-weight: bold;
   min-height: 60px;
   color: #FFF;
-  overflow: none;
+  /* overflow: none; */
 }
 
 nav {
@@ -130,10 +130,19 @@ nav ul {
 }
 
 .nav__link {
-    display: block;
+    display: block; /* Makes the entire area clickable */
     color: #1A1A1D;
     flex: 1;
     padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+.nav__link--first {
+    border-radius: 20px 0 0 20px;
+}
+
+.nav__link--last {
+    border-radius: 0 20px 20px 0;
 }
 
 .nav__link:hover {
@@ -141,7 +150,7 @@ nav ul {
 }
 /* Find a better way to style active page tab on header nav */
 .active-page {
-    /* background-color: #FFF; */
+    background-color: #00BFFF;
 }
 
 
