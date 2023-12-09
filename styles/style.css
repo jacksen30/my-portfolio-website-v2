@@ -352,6 +352,14 @@ textarea {
         margin-bottom: 25px;
     }
 
+    .social-icon {
+        transition: 1.2s;
+    }
+
+    .social-icon:hover {
+        transform: rotateY(360deg);
+    }
+
     .skills-desktop-layout {
         justify-content: space-between;
     }
