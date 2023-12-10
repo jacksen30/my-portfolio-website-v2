@@ -1,4 +1,3 @@
-
 // Selecting these divs by .getElementById to ensure that they are unique and not clasases that may be used on multiple elements 
 const form = document.getElementById('contact-form');
 const fullName = document.getElementById('fname-wrapper').children;
@@ -89,7 +88,11 @@ form.addEventListener('submit', (event) => {
             // Handle errors, e.g., show error message
             alert('Error submitting the form. Please try again later.');
           });
-      } else {
-        alert('Please fill in all required fields correctly before submitting.');
       }
     });
+
+    /* Not Required as error / text hint warning text will appear below inputs that haven't passed validation */
+    //   else {
+    //     alert('Please fill in all required fields correctly before submitting.');
+    //   }
+    // });
