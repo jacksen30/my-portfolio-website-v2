@@ -1,6 +1,5 @@
-
 // Selecting these divs by .getElementById to ensure that they are unique and not clasases that may be used on multiple elements 
-const form = document.getElementById('contact-form');
+const form = document.getElementById('form');
 const fullName = document.getElementById('fname-wrapper').children;
 const email = document.getElementById('email-wrapper').children;
 const message = document.getElementById('message-wrapper').children;
