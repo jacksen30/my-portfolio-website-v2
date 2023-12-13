@@ -83,6 +83,10 @@ body {
   margin: 0 auto;
 }
 
+.container-mobile {
+    width: 95%;
+}
+
 main {
   color: var(--text-content-color);
   font-family: 'DM Mono', monospace;
@@ -155,7 +159,6 @@ nav ul {
     background-color: #00BFFF;
 }
 
-/* Footer */
 /* Footer Styling */
 footer {
   position: sticky;
@@ -206,11 +209,15 @@ footer {
 }
 
 /* Portfolio Page - Styling */
+    /* over rides main in portofio page -- needs moving to larger viewport only*/
+.portfolio {
+    padding: 0;
+}
 
 .project-cards-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 30px;
     margin-bottom: 20px;
 }
@@ -218,7 +225,8 @@ footer {
 .project-card {
     display: flex;
     flex-direction: column;
-    max-width: 345px;
+    min-width: 350px;
+    max-width: 380px;
     border: 2px solid #17BEBB;
     border-radius: 5px;
 }
@@ -237,7 +245,6 @@ footer {
 .badge {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     font-size: 13px;
     margin-right: 10px;
     background-color: #FFF;
@@ -250,8 +257,6 @@ footer {
     display:flex;
     flex-direction: row;
     margin-top: 4px;
-    /* align-items: center; */
-    /* justify-content: center; */
 }
 
 .badge i {
@@ -279,10 +284,54 @@ footer {
 
 .project-description {
     font-size: 16px;
-    padding: 16px 0 0 0;
+    margin: 16px 0 0 0;
     line-height: 1.1;
 }
 
+.cutoff-text {
+    --max-lines: 4;
+    --line-height: 1.1;
+
+    padding: 0;
+    height: calc(var(--max-lines) * 1em * var(--line-height));
+    line-height: var(--line-height);
+
+    overflow: hidden;
+}
+
+.expand-btn {
+    appearance: none;
+    /* border: 1px solid black; */
+    /* width: 10px; */
+    outline: none;
+    width: 240px;
+    font-size: 12px;
+    padding: 0;
+    color: white;
+    letter-spacing: 1.8px;
+}
+
+.expand-btn:hover {
+    cursor: pointer;
+}
+
+.expand-btn::before {
+    font-family: "Font Awesome 5 Free";
+    content: "Read Full Description \f078";
+}
+
+.expand-btn:checked::before {
+    content: "Show Less";
+}
+
+.cutoff-text:has(+ .expand-btn:checked) {
+    height: auto;
+}
+
+/* .arrow-icon {
+    width: 10%;
+    background-color: #0000FF;
+} */
 .button-wrapper {
     margin: 15px 0 10px 0;
 }
@@ -453,10 +502,20 @@ textarea {
         transform: rotateY(360deg);
     }
 
+    /* Portfolio - Project Cards - Styling */
     .project-cards-section {
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
+    }
+
+    .project-card {
+        display: flex;
+        flex-direction: column;
+        min-width: 340px; /* To Overide the min-width set for mobile viewports */
+        max-width: 345px;
+        border: 2px solid #17BEBB;
+        border-radius: 5px;
     }
 
     .skills-desktop-layout {
