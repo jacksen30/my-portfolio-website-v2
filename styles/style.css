@@ -211,7 +211,7 @@ footer {
 /* Portfolio Page - Styling */
     /* over rides main in portofio page -- needs moving to larger viewport only*/
 .portfolio {
-    padding: 0;
+    padding-top: 30px;
 }
 
 .project-cards-section {
@@ -289,49 +289,38 @@ footer {
 }
 
 .cutoff-text {
-    --max-lines: 4;
-    --line-height: 1.1;
-
-    padding: 0;
-    height: calc(var(--max-lines) * 1em * var(--line-height));
-    line-height: var(--line-height);
-
-    overflow: hidden;
+  --max-lines: 3;
+  --line-height: 1.25;
+  padding: 0;
+  height: calc(var(--max-lines) * 1em * var(--line-height));
+  line-height: var(--line-height);
+  overflow: hidden;
 }
 
 .expand-btn {
-    appearance: none;
-    /* border: 1px solid black; */
-    /* width: 10px; */
-    outline: none;
-    width: 240px;
-    font-size: 12px;
-    padding: 0;
-    color: white;
-    letter-spacing: 1.8px;
-}
-
-.expand-btn:hover {
-    cursor: pointer;
+  border: none;
+  appearance: none;
+  outline: none;
+  width: 240px;
+  font-size: 12px;
+  padding: 0;
+  color: white;
+  letter-spacing: 1.8px;
 }
 
 .expand-btn::before {
-    font-family: "Font Awesome 5 Free";
-    content: "Read Full Description \f078";
+  font-family: "Font Awesome 5 Free";
+  content: "Read Full Description \f078";
 }
 
 .expand-btn:checked::before {
-    content: "Show Less";
+  content: "Show Less \f077";
 }
 
 .cutoff-text:has(+ .expand-btn:checked) {
-    height: auto;
+  height: auto;
 }
 
-/* .arrow-icon {
-    width: 10%;
-    background-color: #0000FF;
-} */
 .button-wrapper {
     margin: 15px 0 10px 0;
 }
@@ -342,9 +331,8 @@ footer {
     margin-right: 20px;
     color: black;
     background-color: #E4E7E6;
-    border: 1px solid black;
+    border: 2px solid black;
 }
-
 
 /* Skills Page - Styling */
 .skills-icons-wrapper {
@@ -502,20 +490,36 @@ textarea {
         transform: rotateY(360deg);
     }
 
-    /* Portfolio - Project Cards - Styling */
+    /* Portfolio Page - Styling */
+     .portfolio {
+      padding-top: 0px;
+    }
+
+      /* Project Cards - Styling */
     .project-cards-section {
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
 
     .project-card {
-        display: flex;
-        flex-direction: column;
-        min-width: 340px; /* To Overide the min-width set for mobile viewports */
-        max-width: 345px;
-        border: 2px solid #17BEBB;
-        border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      min-width: 340px; /* To Overide the min-width set for mobile viewports */
+      max-width: 345px;
+      border: 2px solid #17BEBB;
+      border-radius: 5px;
+    }
+
+    .expand-btn:hover {
+      cursor: pointer;
+      color:rgba(0, 0, 0, 0.735);
+    }
+
+    .button--project-card:hover {
+      color: green;
+      border: 2px solid rgb(0, 128, 0);
+      box-shadow: rgba(0, 128, 0, 0.4) 3px 3px;
     }
 
     .skills-desktop-layout {
