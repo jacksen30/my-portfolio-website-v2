@@ -363,7 +363,6 @@ figcaption {
 }
 
 figure:hover figcaption {
-  /*filter: brightness(80%);*/
   opacity: 1;
   transform: scale(0.9);
 }
@@ -376,13 +375,11 @@ figure:hover {
 
 /* For Certificates List Items */
 .skills-cert-list {
-  /* padding-left: 0rem; */
   padding: 0 0 0 5px;
-  /* margin: 0 0; */
 }
 
 .skills-cert-list li {
-  padding-bottom: 8px;
+  padding-bottom: 11px;
 }
 
 /* Contact Form - Styling */
@@ -497,13 +494,8 @@ textarea {
   }
 
   /* For Certificates List Items */
-  .skills-cert-list {
-    /* padding: 0 0 0 5px; */
-    /* margin: 0 0; */
-  }
-
   .skills-cert-list li {
-    /* padding: 6px 0; */
+    padding-bottom: 8px;
   }
 
   /* Portfolio Page - Styling */
