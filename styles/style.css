@@ -199,6 +199,11 @@ footer {
   font-size: 1.125rem;
 }
 
+.hero-text-p a {
+  color: white;
+  text-decoration: none;
+}
+
 .social-icon-container {
   padding: 1.5rem 0;
 }
@@ -231,6 +236,9 @@ footer {
     border-radius: 5px;
 }
 
+.project-card-image-wrapper {
+  overflow: hidden;
+}
 .project-card-image-wrapper img {
     border-radius: 3px 3px 0 0;
 }
