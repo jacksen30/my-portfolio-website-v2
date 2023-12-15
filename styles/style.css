@@ -376,7 +376,13 @@ figure:hover {
 
 /* For Certificates List Items */
 .skills-cert-list {
-  padding-left: 0rem;
+  /* padding-left: 0rem; */
+  padding: 0 0 0 5px;
+  /* margin: 0 0; */
+}
+
+.skills-cert-list li {
+  padding-bottom: 8px;
 }
 
 /* Contact Form - Styling */
@@ -442,109 +448,119 @@ textarea {
 
 @media (min-width: 850px) {
 
-    .flex {
-        display: flex;
-    }
+  .flex {
+    display: flex;
+  }
 
-    .nav__link:hover {
-        background-color: #00BFFF;
-    }
+  .nav__link:hover {
+    background-color: #00BFFF;
+  }
 
-    .hero-inner-wrapper {
-        flex-direction: row-reverse;
-        justify-content: space-between;
-    }
+  .hero-inner-wrapper {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 
-    main {
-        margin-top: 100px;
-    }
+  main {
+    margin-top: 100px;
+  }
 
-    .desktop-left {
-        width: 60%;
-    }
+  .desktop-left {
+    width: 60%;
+  }
 
-    .hero-img-wrapper {
-        display: block;
-        width: 25%;
-        height: 25%;
-    }
+  .hero-img-wrapper {
+    display: block;
+    width: 25%;
+    height: 25%;
+  }
 
-    /* SKILLS SECTION STILL EXPERIMENTING */
-    main {
-        margin-top: 25px;
-    }
+  /* SKILLS SECTION STILL EXPERIMENTING */
+  main {
+    margin-top: 25px;
+  }
 
-    .home {
-        margin-top: 100px;
-    }
+  .home {
+    margin-top: 100px;
+  }
 
-    .main-heading {
-        margin-bottom: 25px;
-    }
+  .main-heading {
+    margin-bottom: 25px;
+  }
 
-    .social-icon {
-        transition: transform 1.2s;
-    }
+  .social-icon {
+    transition: transform 1.2s;
+  }
 
-    .social-icon:hover {
-        transform: rotateY(360deg);
-    }
+  .social-icon:hover {
+    transform: rotateY(360deg);
+  }
 
-    /* Portfolio Page - Styling */
-     .portfolio {
-      padding-top: 0px;
-    }
+  /* For Certificates List Items */
+  .skills-cert-list {
+    /* padding: 0 0 0 5px; */
+    /* margin: 0 0; */
+  }
+
+  .skills-cert-list li {
+    /* padding: 6px 0; */
+  }
+
+  /* Portfolio Page - Styling */
+  .portfolio {
+    padding-top: 0px;
+  }
 
       /* Project Cards - Styling */
-    .project-cards-section {
-      flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
+  .project-cards-section {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 
-    .project-card {
-      display: flex;
-      flex-direction: column;
-      min-width: 340px; /* To Overide the min-width set for mobile viewports */
-      max-width: 345px;
-      border: 2px solid #17BEBB;
-      border-radius: 5px;
-    }
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 340px; /* To Overide the min-width set for mobile viewports */
+    max-width: 345px;
+    border: 2px solid #17BEBB;
+    border-radius: 5px;
+  }
 
-    .expand-btn:hover {
-      cursor: pointer;
-      color:rgba(0, 0, 0, 0.735);
-    }
+  .expand-btn:hover {
+    cursor: pointer;
+    color:rgba(0, 0, 0, 0.735);
+  }
 
-    .button--project-card:hover {
-      color: green;
-      border: 2px solid rgb(0, 128, 0);
-      box-shadow: rgba(0, 128, 0, 0.4) 3px 3px;
-    }
+  .button--project-card:hover {
+    color: green;
+    border: 2px solid rgb(0, 128, 0);
+    box-shadow: rgba(0, 128, 0, 0.4) 3px 3px;
+  }
 
-    .skills-desktop-layout {
-        justify-content: space-between;
-    }
+  .skills-desktop-layout {
+    justify-content: space-between;
+  }
 
-    .skills-tech-div {
-        width: 40%;
-    }
+  .skills-tech-div {
+    width: 40%;
+  }
 
-    .skills-icons-wrapper {
-        padding: 0 0 0 0;
-    }
+  .skills-icons-wrapper {
+    padding: 0 0 0 0;
+  }
 
-    .skills-certs-div {
-        width: 50%;
-    }
+  .skills-certs-div {
+    width: 50%;
+  }
 
-    /* Contact Form */
-    .error-message {
-        font-size: 1rem;
-    }
+  /* Contact Form */
+  .error-message {
+    font-size: 1rem;
+  }
 
-    footer {
-        text-align: right;
-        padding-right: 1rem;
-      }
+  footer {
+    text-align: right;
+    padding-right: 1rem;
+  }
 }
